@@ -26,3 +26,33 @@ int main()
      printf("The number %d is not a strong number",stored);
     return 0;
 }
+
+or
+
+/*
+
+
+#include<stdio.h>
+int main()
+{
+    int n,i,f=1,stored,rem,sum=0;
+    scanf("%d",&n);
+    stored=n;
+    while(n!=0)
+    {
+        rem=n%10;
+        for(i=1;i<=rem;i++)
+        {
+            f=f*i;
+        }
+        sum=sum+f;
+        f=1;
+        n/=10;
+    }
+    if(sum==stored)
+     printf("The number %d is a strong number",stored);
+    else
+     printf("The number %d is not a strong number",stored);
+}
+
+*/
