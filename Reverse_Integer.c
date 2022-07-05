@@ -1,16 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    signed int n,rev=0,rem=0;
-    scanf("%d",&n);
-    while(n!=0)
+    int num,rem,rev=0;
+    scanf("%d",&num);
+    while(num!=0)
     {
-        rem=n%10;
+        rem=num%10;
         rev=rev*10+rem;
-        n/=10;
+        num/=10;
     }
     printf("%d",rev);
     return 0;
+    
 }
-
-//Same as palindrome
